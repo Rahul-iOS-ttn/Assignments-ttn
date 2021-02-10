@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+           font-family: sans-serif; 
+        }
+        .container{
+            width: 100%;
+            margin: auto;
+        }
+        .navigation_bar{
+            display: flex;
+            justify-content: space-between;
+            padding: 30px 0px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 30px;
+            color: #17bd3b;
+            border-bottom: 1px solid lightgrey;
+        }
+        .Link_style a{
+            color: #17bd3b;
+            text-decoration: none;
+            margin-left: 12px;
+        }
+        .Bug_report_style{
+            background-color: #6c728e;
+            color: white;
+            padding: 10px 25px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .Form_style{
+            width: 360px;
+            margin: auto;
+        }
+        .Form_container{
+            padding: 10px 25px;
+            border: 1px solid lightgray;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        .Form_container form{
+            display: flex;
+            flex-direction: column;
+        }
+        input, select, textarea{
+            margin-bottom: 10px;
+            padding: 5px;
+            border-radius: 10px;
+        }
+        select {
+            background-color: #17bd3b;
+        }
+        input[type="submit"]{
+            background-color: #17bd3b;
+        }
+    </style>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div class="container">
+        <div class="navigation_bar">
+            <h2>TO THE NEW</h2>
+            <div class="Link_style">
+                <a href="#">Home</a>
+                <a href="#">Quick Help</a>
+            </div>
+        </div>
+    </div>
+    <div class="Form_style">
+        <div class="Bug_report_style">
+            <h3>Bug Report</h3>
+        </div>
+        <div class="Form_container">
+            <form>
+                <label>Title:<sup>*</sup></label>
+                <input type="text">
+                <label>Description:<sup>*</sup></label>
+                <textarea cols="30" rows="4"></textarea>
+                <label>Operating System:</label>
+                <select>
+                    <option value="">Windows 7</option>
+                    <option value="">Windows 8</option>
+                    <option value="">Windows 10</option>
+                </select>
+                <label>Product:<sup>*</sup></label>
+                <select>
+                    <option value="">Formoid</option>
+                    <option value="">Forman</option>
+                    <option value="">Distro</option>
+                </select>
+                <label>Version:<sup>*</sup></label>
+                <input type="text">
+                <label>License:</label>
+                <div>
+                    <span>
+                        <input type="radio">
+                        <label>Free</label>
+                    </span>
+                    <span>
+                        <input type="radio">
+                        <label>Business</label>
+                    </span>
+                </div>
+                <label>Severity:</label>
+                <select>
+                    <option value="">Critical</option>
+                    <option value="">Medium</option>
+                    <option value="">None</option>
+                </select>
+                <label>Attatchments:</label>
+                <label><input type="file"></label>
+                <input type="submit" value="send" style="align-self: flex-end;">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
