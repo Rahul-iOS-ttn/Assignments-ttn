@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+      	function input()
+        {
+        	var p_p = prompt("Please enter the Amount");
+            var n_p = prompt("Please enter the Rate");
+            var r_p = prompt("Please enter the No. of the years");
+            result_p = document.getElementById("result_p");
+            	
+            result_p.innerHTML = "The interest is "+(p_p*n_p*r_p/100);
+        }
+    </script>
+</head>
+<body>
+
+ <h1>Simple Interest Calculation</h1>
+        
+        For using prompt please use this button.
+        <button onclick="input()">Try it.</button>
+		<p id="result_p"></p>
+</body>
+</html>
