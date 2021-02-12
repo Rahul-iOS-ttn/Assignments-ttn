@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 12</title>
+    <style>
+        html, body{
+            height: 90%;
+            width: 90%;
+        }
+        .p{
+            width: 70%;
+            height: 70%;
+            background: rebeccapurple;
+        }
+
+        div, ul, li{
+            background-color: aqua;
+            list-style: none;
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <div class="p">
+        <ul>
+            <li>list element in div.</li><br>
+            <li>list element in div.</li><br>
+            <li>list element in div.</li>
+        </ul>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".p").on("click", function(){
+                alert("clicked on panel element.");
+            }).children.on("click", function(e){
+                e.stopPropagation();
+            });
+        });
+    </script>
+    <a href="index.html">Index</a>
+</body>
+</html>

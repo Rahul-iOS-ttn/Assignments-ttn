@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 5</title>
+    <style>
+        .target{
+            font-size: 100%;
+            text-align: center;
+        }        
+    </style>
+</head>
+<body>
+    <div id="main">
+        <p class="target">small random paragraph(kasdhjfbjkhashbvkadjfbgja)</p>
+    </div>
+    <div id="bot">
+        <p class="target">Small random paragraph again(asjhbdfsakjdfba,sfgj)</p>
+    </div>
+    <center><button>Changer</button></center>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("button").click(function(){
+                $(".target").parent("#main").css("font-size", "500%");
+            });
+        });
+    </script>
+    <a href="index.html">Index</a>
+</body>
+</html>

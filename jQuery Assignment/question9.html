@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 9</title>
+</head>
+<body>
+    <span>Select food from the list.</span>
+    <select>
+        <option value="">Select Items</option>
+        <option value="Pav bhaji">Pav bhaji</option>
+        <option value="Burger">Burger</option>
+        <option value="Coke">Coke</option>
+    </select>
+    <p>So you want to have <span><p id="This"></p></span></p>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("select").on("change", function(){
+                $("#This").append(this.value+" <br>")
+            });
+        });
+    </script>
+    <a href="index.html">Index</a>
+</body>
+</html>

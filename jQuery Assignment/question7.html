@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 7</title>
+</head>
+<body>
+    <center>
+        <p id="Enter_text"></p>
+        <button>Click me!</button>
+    </center>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#Enter_text").append("This is the text entered!<br>")
+            });
+            $("#Enter_text").click(function(){
+                $("#Enter_text").append("Click me!<br>")
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 6</title>
+    <style>
+        div, p, button{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Supposedly first paragraph</p>
+        <p>Second one</p>
+        <p>Keep it simple</p>
+    Text for the div tag.
+    </div>
+    <center>
+        <button id="todiv">change to div</button>
+        <button id="top">change to p</button>
+    </center>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#todiv").click(function(){
+                $("p").replaceWith($("<p>"+$("div").text()+"</p>"));
+            });
+            $("#top").click(function(){
+                console.log($("p"));
+                $("div").replaceWith($("<div>"+$("p").text()+"</div>"));
+            });
+        });
+    </script>
+    <a href="index.html">Index</a>
+</body>
+</html>

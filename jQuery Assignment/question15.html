@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 15</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="first_div"><b>
+        Hello!!
+    </b>
+    </div>
+    <button type="button">Data Retriever</button>
+    <script>
+        $(document).ready(function(){
+            console.log("correct");
+            $("button").click(function(){
+            console.log("correct2");
+                $.ajax({url:"question15_data.txt", async:true, dataType:"text", type:"GET", success:function(ans){
+                    setTimeout(function(){
+                        console.log(ans);
+                        $("#first_div").append("<br>" + ans);
+                    }, 2000);
+                }, error:function(){
+                    console.log("error");
+                }});
+                console.log("outside ajax");
+                // $.ajax({url:"question15_data.txt", async:true, dataType:"text", type:"GET", success:function(ans){
+                //     console.log(ans);
+                // }});
+            });
+        });
+        // not working due to cors policy restrictions. 
+        // can be understood through 
+        // https://stackoverflow.com/questions/43871637/no-access-control-allow-origin-header-is-present-on-the-requested-resource-whe/43881141#43881141
+        
+    </script>
+    <a href="index.html">Index</a>
+</body>
+</html>

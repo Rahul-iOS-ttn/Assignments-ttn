@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 10</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#flipper").hover(function(){
+                $(".panel").slideToggle("slow");
+            });
+        });
+    </script>
+    <style>
+        #flipper{
+            padding: 5px;
+            text-align: center;
+            background-color: aqua;
+            border: solid 1px royalblue;
+        }
+
+        .panel{
+            padding: 30px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="flipper">Hover for sliding the panel</div>
+    <div class="panel">Monica</div>
+    <div class="panel">Joe</div>
+    <div class="panel">Chandler</div>
+    <div class="panel">Phoebe</div>
+    <div class="panel">Rachel</div>
+    <div class="panel">Ross</div>
+    <a href="index.html">Index</a>
+</body>
+</html>

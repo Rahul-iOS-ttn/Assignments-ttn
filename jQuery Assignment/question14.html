@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 14</title>
+    <style>
+        table, th, td {
+            border: 1px solid blue;
+        }
+
+        th, td{
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table id="Table" style="width: 80%;">
+        <center><strong>AGE DATA</strong></center>
+        <tr>
+            <th class="name">First name</th>
+            <th class="lname">Last name</th>
+            <th class="age">AGE</th>
+        </tr>
+        <tr>
+            <td class="name">Sonal</th>
+            <td class="lname">Rome</th>
+            <td class="age">15</th>
+        </tr>
+        <tr>
+            <td class="name">Leo</th>
+            <td class="lname">Messi</th>
+            <td class="age">45</th>
+        </tr>
+        <tr>
+            <td class="name">bristol</th>
+            <td class="lname">rin</th>
+            <td class="age">8</th>
+        </tr>
+        <tr>
+            <td class="name">Aston</th>
+            <td class="lname">Martin</th>
+            <td class="age">55</th>
+        </tr>
+    </table>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".age").each(function(i, n){
+                if($(n).text() > 10)
+                    $(n).css("color", "orange").css("background-color", "yellow");
+            });
+        });
+    </script>
+    <a href="index.html">Index</a>
+</body>
+</html>

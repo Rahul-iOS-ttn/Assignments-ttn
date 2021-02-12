@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 13</title>
+</head>
+<body>
+    <div class="div_class">
+        lkjsdafnlksdfn inside 1<br>
+        kajshdbfalsdhbfas inside 1<br>
+    </div>
+    <div class="div_class">
+        lkjsdafnlksdfn inside 2<br>
+        kajshdbfalsdhbfas inside 2<br>
+        kshjbfkajbgaj dsalkfk inside 2 <br>
+    </div>
+    <div class="div_class">
+        lkjsdafnlksdfn inside 3<br>
+        kajshdbfalsdhbfas inside 3<br>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        $(document).click(function(){
+            var highest_element = null;
+            var hi = 0;
+            $(".div_class").each(function(){
+                var h = $(this).height();
+                if(h > hi){
+                    hi = h;
+                    highest_element = $(this);  
+                }    
+            });
+            $(highest_element).css("background-color", "royalblue");
+            alert("max height " + hi);
+        });
+    </script>
+    <a href="index.html">Index</a>
+</body>
+</html>
